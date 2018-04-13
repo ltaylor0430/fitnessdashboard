@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SigninComponent } from './signin/signin.component';
+import { SharedModule } from './shared/shared.module.';
+import { WorkoutModule } from './workout/workout.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SigninComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule,
+    WorkoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
