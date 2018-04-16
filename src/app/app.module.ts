@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module.';
 import { WorkoutModule } from './workout/workout.module';
 import { SignInModule } from './signin/signin.module';
+import { FontAwesomeIconDirective } from './shared/font-awesom-icon/font-awesome-icon.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FontAwesomeIconDirective
   ],
   imports: [
     BrowserModule,
