@@ -1,0 +1,45 @@
+// 1. Import the initial variables
+// includePaths in angular-cli.json allow us to import from bulma/scss folder
+// Bulma CSS Framework
+@import "utilities/initial-variables";
+@import "utilities/functions";
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+$green:#85db18;
+$black: #2d2832;
+$green-invert:findColorInvert($green);
+// Add pink and its invert
+$beige: #848753;
+$beige-invert:findColorInvert($beige);
+// Add a serif family
+$family-sans-serif: "Nuinto", serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $black;
+$primary-invert: white;
+// Use the existing orange as the danger color
+$danger: $orange;
+// Use the new serif family
+$family-primary: $family-sans-serif;
+
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+// 5. Add new color variables to the color map.
+@import "../sass/utilities/derived-variables";
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
