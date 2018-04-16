@@ -3,19 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { SigninComponent } from './signin/signin.component';
 import { SharedModule } from './shared/shared.module.';
 import { WorkoutModule } from './workout/workout.module';
+import { SignInModule } from './signin/signin.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SigninComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
+    SignInModule,
     WorkoutModule
   ],
   providers: [],

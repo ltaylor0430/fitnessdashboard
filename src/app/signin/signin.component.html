@@ -3,11 +3,11 @@
   <div class="column">
     <h1>Welcome back. Ready to get fit?</h1>
     <span class="brand">KF</span>
-    <form>
+    <form [formGroup]="signInFormGroup">
       <div class="field">
         <label class="label">Username</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-large" type="text" placeholder="Username" name="username" />
+          <input class="input is-large" type="text" placeholder="Username" formControlName="username" />
           <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -15,12 +15,13 @@
                 <i class="fas fa-check"></i>
               </span>
         </div>
-        <p class="help is-success">This username must be a valid email address</p>
+        <p class="help is-success">This username is valid</p>
+        <p class="help is-failure">This username must be a valid email address</p>
       </div>
       <div class="field">
         <label class="label">Password</label>
         <div class="control">
-          <input class="input is-large" type="password" name="password" />
+          <input class="input is-large" type="password" formControlName="password" />
         </div>
       </div>
       <button class="button is-primary" type="submit">Login</button>
