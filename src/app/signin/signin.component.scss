@@ -2,3 +2,25 @@
   background:white;
 
 }
+
+.kf-logo {
+  height:96px;
+  width:auto;
+}
+ .other-logins {
+    display: table;
+    white-space: nowrap;
+    font-weight:700;
+    padding:14px 0;
+    &:before, &:after {
+      border-top: 1px solid #b5b5b5;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.8em;
+      width: 45%;
+    }
+    &:before { right: 2%; }
+    &:after { left: 2%; }
+}
+
