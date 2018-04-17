@@ -1,13 +1,16 @@
 @import '~sass/variables';
 .power-clean-bg {
-
+/*
   min-height:100vh;
   width:100%;
   position:absolute;
-  background-image:url('/assets/shoes.jpg');
-  opacity:.08;
-  background-size: cover;
+  background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA0IiBoZWlnaHQ9IjM…M0NTQwNGIiIGZpbGwtb3BhY2l0eT0iLjEyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="),
+  radial-gradient(ellipse farthest-corner at 180% -190%,#d6e081 20%,transparent 70%);
+  background-color:#1e1f19;
+  color:white;
+
   background-repeat:no-repeat;
+*/
 }
 .nav-footer {
   position:fixed;

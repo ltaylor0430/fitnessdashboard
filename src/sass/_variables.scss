@@ -4,7 +4,7 @@
 @import "utilities/initial-variables";
 @import "utilities/functions";
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,400,700');
 
 // 2. Set your own initial variables
 // Update blue
@@ -13,15 +13,15 @@ $green:#85db18;
 $black: #2d2832;
 $green-invert:findColorInvert($green);
 // Add pink and its invert
-$beige: #848753;
+$beige: #329448;
 $beige-invert:findColorInvert($beige);
 // Add a serif family
-$family-sans-serif: "Nuinto", serif;
+$family-sans-serif: "Open Sans", serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $black;
-$primary-invert: white;
+$primary: $beige;
+$primary-invert: $beige-invert;
 // Use the existing orange as the danger color
 $danger: $orange;
 // Use the new serif family

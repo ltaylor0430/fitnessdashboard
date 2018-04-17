@@ -6,9 +6,11 @@
 @import './mixins';
 /* You can add global styles to this file, and also import other style files */
 body {
+  background-image:url('/assets/shoes.jpg');
+  background-size: cover;
+  width:100%;
+  height:100vh;
+  opacity:1;
+  color:$white-bis;
   //background:#2d2832;
-  background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA0IiBoZWlnaHQ9IjM…M0NTQwNGIiIGZpbGwtb3BhY2l0eT0iLjEyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="),
-                    radial-gradient(ellipse farthest-corner at 180% -190%,#d6e081 20%,transparent 65%);
-  background-color:#1e1f19;
-  color:white;
 }

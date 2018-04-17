@@ -15,7 +15,9 @@ const targetPath = `./src/environments/environment.${environment}.ts`;
 const envConfigFile = `
 export const environment = {
   production: ${isProd},
-  dbUrl: '${process.env.dbUrl}'
+  dbUser: '${process.env.KF_DB_USER}',
+  dbPassword:'${process.env.KF_DB_PASSWORD}',
+  dbUrl: '${process.env.KF_DB_URL}'
 };
 `;
 writeFile(targetPath, envConfigFile, function (err) {

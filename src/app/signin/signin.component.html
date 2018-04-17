@@ -1,5 +1,64 @@
-<section class="container">
-<div class="columns">
+
+ <section class="hero is-dark is-bold is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+
+        <div class="column is-12">
+            <div class="columns">
+
+        <div class="column is-half is-offset-one-quarter">
+          <h3 class="title has-text-grey level-left">KF</h3>
+          <div class="box">
+            <figure class="avatar">
+              <!--<img src="https://placehold.it/128x128"/> -->
+              <img  style="width:128px;height:128px;" src="../../assets/kf_transparent-bw.png"/>
+            </figure>
+            <form [formGroup]="signInFormGroup">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="email" form-control="username" placeholder="Your Email" autofocus="">
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="password"  form-control="password" placeholder="Your Password">
+                </div>
+              </div>
+              <div class="field">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  Remember me
+                </label>
+              </div>
+              <button class="button is-block is-info is-large is-fullwidth">Login</button>
+              <span class="other-logins">or</span>
+
+              <div class="field">
+                  <button class="button is-medium is-primary " type="button">Facebook</button>
+
+                  <button class="button is-medium   is-primary " type="button">Facebook</button>
+
+                  <button class="button is-medium  is-primary" type="button">Facebook</button>
+                </div>
+
+            </form>
+          </div>
+          <p class="has-text-grey">
+            <a href="../">Sign Up</a> &nbsp;·&nbsp;
+            <a href="../">Forgot Password</a> &nbsp;·&nbsp;
+            <a href="../">Need Help?</a>
+          </p>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!--
+<section class="hero sign-in">
+<div class="hero-body">
+  <div class="columns">
   <div class="column">
     <h1>Welcome back. Ready to get fit?</h1>
     <span class="brand">KF</span>
@@ -9,7 +68,7 @@
         <div class="control has-icons-left has-icons-right">
           <input class="input is-large" type="text" placeholder="Username" formControlName="username" />
           <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
+              <i appFontAwesomeIcon [icon]="['fas','fa-user']"></i>
             </span>
             <span class="icon is-small is-right">
                 <i class="fas fa-check"></i>
@@ -37,4 +96,7 @@
 
   </div>
 </div>
+</div>
 </section>
+
+-->
