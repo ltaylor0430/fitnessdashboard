@@ -5,10 +5,23 @@
 
 @import './mixins';
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  margin:0;
+}
 body {
  /* background-image:linear-gradient(221deg,#917d39 -10%, #1f191a 10%, #363636 71%, #46403f 100%);*/
- background-image: radial-gradient(farthest-side at 99% 230%, #917d39 3%, #1f191a 100%, #363636 100%, transparent 84%);
+  &:after {
+    content:'';
+    background-size: cover;
+    top:0;
+    right:0;
+    z-index:-1;
+    left:0;
+    bottom:0;
+    position:fixed;
+    background-image: radial-gradient(farthest-side at 99% 230%, #917d39 3%, #1f191a 100%, #363636 100%, transparent 84%);
 
+  }
 
 
   color:$white-bis;
@@ -35,6 +48,7 @@ body {
 app-root {
   z-index:10;
 }
+
 .facebook {
   background-image:url('/assets/Facebook-color.svg');
   width:24px;

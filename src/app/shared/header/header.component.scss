@@ -1,0 +1,9 @@
+@import '~sass/variables';
+nav {
+  text-transform: uppercase;
+}
+.navbar-brand {
+  font-weight:700;
+  font-size:1.5rem;
+  color:$green;
+}
